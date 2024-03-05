@@ -286,50 +286,6 @@ ol {
 }
 
 
-@media screen and (max-width: 300px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-
-  
-  header img {
-    width: 6rem; 
-  }
-
-  h1 {
-    font-size: 2.5rem; 
-  }
-
-  #game-container {
-    max-width: 20rem; 
-  }
-
-  #game-board button {
-    width: 2rem; 
-    height: 2rem;
-    font-size: 3.5rem; 
-    padding: 0.5rem; 
-  }
-
-
-  #game-board ol {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-
-
-
-
-
 @keyframes slide-in-from-left {
   0% {
     opacity: 0;
@@ -425,4 +381,12 @@ h1 {
   padding: 1rem; /* Original padding */
 }
 
+@media screen and (max-width: 530px) {
+  #game-board button {
+    width: 5rem; /* Reduce button width */
+    height: 5rem; /* Reduce button height */
+    font-size: 2rem; /* Reduce font size */
+    padding: 0.3rem; /* Reduce padding */
+  }
+}
 
