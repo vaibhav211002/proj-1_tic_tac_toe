@@ -350,30 +350,71 @@ ol {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  header img {
+    width: 6rem; /* Smaller logo on very small screens */
+  }
 
-@media (max-width: 768px) {
-  body {
-    min-height: 120rem; /* Adjust min-height for smaller screens */
+  h1 {
+    font-size: 2.5rem; /* Smaller heading for better fit */
   }
 
   #game-container {
-    max-width: 100%; /* Make the game container full width */
-    padding: 1rem; /* Adjust padding for smaller screens */
+    padding: 1rem; /* Less padding to use space more efficiently */
   }
 
+  #game-board button {
+    width: 6rem; /* Smaller game buttons for smaller screens */
+    height: 6rem;
+    font-size: 3rem; /* Adjust font size for the smaller buttons */
+  }
+
+  #game-over h2 {
+    font-size: 3rem; /* Smaller font for game over message */
+  }
+
+  #game-over p {
+    font-size: 1.5rem; /* Smaller text to fit on screen */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+  /* Adjustments are already quite good, might tweak padding/margins */
   #players li {
-    width: 100%; /* Make player list items full width on smaller screens */
+    flex-direction: column; /* Stack player info vertically */
+    align-items: center; /* Center-align the stacked items */
   }
 
-  /* Add more specific styling for smaller screens as needed */
+  #game-board button {
+    width: 7rem; /* Adjust button size for better fit */
+    height: 7rem;
+    font-size: 4rem; /* Adjust font size for readability */
+  }
 }
 
-/* Media query for screens between 768px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* Adjust styles for medium-sized screens */
-}
+/* Large devices (desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  #game-container {
+    padding: 2rem; /* More padding for larger screens */
+  }
 
-/* Media query for screens larger than 1024px */
-@media (min-width: 1025px) {
-  /* Adjust styles for larger screens */
+  header img {
+    width: 10rem; /* Larger logo for large screens */
+  }
+
+  h1 {
+    font-size: 4rem; /* Increase heading size for better visibility */
+  }
+
+  #game-board button {
+    width: 9rem; /* Larger buttons for a larger interface */
+    height: 9rem;
+    font-size: 5rem; /* Increase font size for clarity */
+  }
+
+  #game-over h2, #game-over p {
+    font-size: 4rem; /* Larger text for end game messages */
+    margin: 1rem; /* Add more space around text for better layout */
+  }
 }
