@@ -6,7 +6,7 @@ import { useState } from 'react'
 import Log from './components/log.jsx'
 import { WINNING_COMBINATIONS } from './combinations.js'
 import Gameover from './components/gameover.jsx'
-
+import '../src/app.css'
 
 const initialgame = [
   [null, null, null],
@@ -126,6 +126,7 @@ function App() {
 
     </div>
     <Log turns={gameturns}/>
+    <h4 className='text'> This Application is Made by Vaibhav Bhatt . For suggestion Mail Here vaibhavbhatt9666@gmail.com</h4>
 
 
   </main>
