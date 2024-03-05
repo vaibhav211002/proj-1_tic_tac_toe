@@ -381,7 +381,7 @@ h1 {
   padding: 1rem; /* Original padding */
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 530px) {
   #game-board button {
     width: 3rem; /* Reduce button width */
     height: 3rem; /* Reduce button height */
